@@ -1,0 +1,27 @@
+{
+  "name": "wa-panel",
+  "version": "3.0.0",
+  "description": "WhatsApp Toplu Mesaj Paneli",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "build": "cd frontend && npm install --legacy-peer-deps && npm run build",
+    "postinstall": "npm run build"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.9",
+    "better-sqlite3": "^11.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "multer": "^2.0.0",
+    "pino": "^9.4.0",
+    "qrcode": "^1.5.4",
+    "socket.io": "^4.7.5",
+    "uuid": "^10.0.0",
+    "node-cron": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
